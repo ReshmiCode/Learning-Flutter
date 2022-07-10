@@ -44,7 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
     Transaction(
         id: 't1', title: 'New Shoes', amount: 69.99, date: DateTime.now()),
     Transaction(
-        id: 't2', title: 'Groceries', amount: 16.54, date: DateTime.now())
+        id: 't2', title: 'Groceries', amount: 16.54, date: DateTime.now()),
+    Transaction(id: 't3', title: 'Purse', amount: 20.00, date: DateTime.now())
   ];
 
   List<Transaction> get _recentTransactions {

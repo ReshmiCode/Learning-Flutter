@@ -10,7 +10,11 @@ class ChartBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      FittedBox(child: Text("\$${spendingAmount.toStringAsFixed(0)}")),
+      Container(
+          height:
+              20, // keeps the bars and date text aligned when this label adjusts
+          child:
+              FittedBox(child: Text("\$${spendingAmount.toStringAsFixed(0)}"))),
       SizedBox(height: 4),
       Container(
           height: 60,
